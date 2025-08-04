@@ -24,18 +24,18 @@ app.post("/send-email", async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "sainishiv6464@gmail.com", // 🔒 your Gmail address
-        pass: "tqed cddl ifxr atja",   // 🔐 App password (NOT your Gmail password)
+        user: "lotusfabricationservice@gmail.com", // 🔒 your Gmail address
+        pass: "jfun yshl cqjw xncg",   // 🔐 App password (NOT your Gmail password)
       },
     });
 
     // Email options
     const mailOptions = {
       from: email,
-      to: "sainishiv6464@gmail.com", // where you want to receive the message
+      to: "lotusfabricationservice@gmail.com", // where you want to receive the message
       subject: `New Details from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-    };
+    };  
 
     // Send email
     await transporter.sendMail(mailOptions);
